@@ -16,5 +16,5 @@ jadwal belajar
 - Git dan GitHub
 - VS Code dan Live Server
 ## Tautan
-- Website: menyusul setelah *deploy* ke Vercel
+- Website: https://danisha-portofolio.vercel.app
 - Dibuat oleh: Danisha Kamelia, SMKN 1 Pasuruan
