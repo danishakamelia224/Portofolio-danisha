@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danisha Kamelia | Proyek</title>
+  <title>Danisha | Proyek</title>
   <link rel="icon" href="danishaa.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body>
   <header>
     <div class="container navbar">
-      <h1>Danisha Kamelia</h1>
+      <h1>Danisha</h1>
       <nav class="menu-laptop">
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -22,9 +22,7 @@
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
-      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
-      <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
-      <details class="menu-ponsel">
+       <details class="menu-ponsel">
         <summary>Menu</summary>
         <nav>
           <ul>
@@ -34,6 +32,7 @@
           </ul>
         </nav>
       </details>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
     </div>
   </header>
 
@@ -47,25 +46,53 @@
           <article class="kartu">
             <h3>Halaman Profil Pertama</h3>
             <img src="modul1.png" alt="Tangkapan layar halaman profil Danisha Kamelia" width="280">
-            <p>Halaman web pertama saya, berisi perkenalan, tentang saya, keahlian, hobi saya, dan email.
-              Dibuat dengan HTML dasar di Minggu 01.</p>
+            <p>Halaman web pertama saya, dibuat dengan HTML dasar.</p>
           </article>
 
           <article class="kartu">
             <h3>Form Kontak</h3>
-            <img src="hubungi.png" alt="Tangkapan layar form kontak berisi nama, email,
-            nomor HP, keperluan, dan pesan" width="280">
-            <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi,
-              sehingga browser menolak form yang masih kosong.</p>
+            <img src="hubungi.png" alt="Tangkapan layar form kontak berisi lima isian" width="280">
+            <p>Form dengan label dan validasi bawaan browser.</p>
           </article>
 
           <article class="kartu">
             <h3>Tabel Jadwal Belajar</h3>
             <img src="jadwal.png" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
-            <p>Tabel berisi jadwal belajar mandiri saya setiap minggu, disusun dengan thead dan tbody.</p>
+            <p>Jadwal belajar mingguan dengan thead dan tbody.</p>
+          </article>
+
+          <article class="kartu">
+            <h3>Portofolio Responsif</h3>
+            <img src="responsif.png" alt="Tangkapan layar portofolio di ponsel" width="280">
+            <p>Rapi di ponsel, tablet, dan laptop dengan Flexbox.</p>
+          </article>
+
+          <article class="kartu">
+            <h3>Kalkulator Nilai Rapor</h3>
+            <img src="kalkulator.png" alt="Tangkapan layar hasil kalkulator nilai di Console" width="280">
+            <p>Rata-rata dan predikat nilai dengan fungsi JavaScript.</p>
+          </article>
+
+          <article class="kartu">
+            <h3>Lima Soal Logika</h3>
+            <img src="logika.jpeg" alt="Tangkapan layar hasil uji lima soal logika" width="280">
+            <p>Lima fungsi logika yang masing-masing diuji 3 masukan.</p>
           </article>
         </div>
       </section>
+
+      <section class="kartu">
+        <h2>Repositori GitHub Saya</h2>
+        <p>Daftar ini diambil langsung dari GitHub setiap kali halaman dibuka.</p>
+        <p id="status-repo"></p>
+        <ul id="daftar-repo"></ul>
+      </section>
+
+        <section class="kartu">
+          <h2>Keahlian</h2>
+          <ul id="daftar-skill"></ul>
+          <p id="jumlah-skill"></p>
+        </section>
 
       <!-- FAQ dengan details dan summary -->
       <section class="kartu">
@@ -77,18 +104,18 @@
         </details>
         <details>
           <summary>Apakah saya menerima pesanan pembuatan website?</summary>
-          <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
+          <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui
+            halaman Kontak.</p>
         </details>
       </section>
     </div>
   </main>
 
   <footer>
-    <p>Kontak: <a href="https://mail.google.com/mail/?v1ew-cm&fs-1&to-nidanishaaa@gmail.com">
-        nidanishaaa@gmail.com</a> |
+    <p>Kontak: <a href="nidanishaaa@gmail.com">nidanishaaa@gmail.com</a> |
       <a href="https://github.com/danishakamelia224" target="_blank">GitHub</a> |
       <a href="https://www.youtube.com/@aldisburgercempaka" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Danisha Kamelia. Dibuat di Kelas Industri UBIG.</p>
+    <p>&copy; 2026 Danisha. Dibuat di Kelas Industri UBIG.</p>
   </footer>
 </body>
 </html>
