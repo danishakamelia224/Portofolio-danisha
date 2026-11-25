@@ -109,6 +109,7 @@ function buatKartu(item) {
             <h3>${item.judul}</h3>
             <img src="${item.gambar}" alt="${item.alt}" width="280">
             <p>${item.deskripsi}</p>
+            <img src="${item.gambar}" alt="${item.alt}" width="280" height="184">
         </article>`;
 }
 
@@ -138,7 +139,7 @@ if (daftarProyek) {
 
 // 5. Repositori GitHub terbaru (halaman Proyek)
 const username = "danishakamelia224";
-const alamatRepo = `https://api.github.com/users/${username}/repos`;
+const alamatRepo = `https://api.github.com/users/danishakamaelia224`;
 const pilihan = "?sort=updated&per_page=6";
 
 const daftarRepo = document.querySelector("#daftar-repo");

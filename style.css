@@ -1,5 +1,5 @@
 /* Gaya portofolio Danisha
-   Palet: #1D3557 (utama), #E63946 (aksen), #F1FAEE (latar)
+   Palet: #1D3557 (utama), #C1121F (aksen), #F1FAEE (latar)
    Huruf: Poppins (judul), Inter (isi)
    Tata letak: mobile first, titik ubah 768px (tablet) dan 1024px (laptop) */
 
@@ -18,8 +18,8 @@ img {
 :root {
   --warna-utama: #1D3557;
   --warna-judul: #1D3557;
-  --warna-aksen: #E63946;
-  --warna-tautan: #E63946;
+  --warna-aksen: #C1121f;
+  --warna-tautan: #C1121F;
   --warna-latar: #F1FAEE;
   --warna-teks: #333333;
   --warna-kartu: #FFFFFF;
@@ -32,6 +32,8 @@ body {
   line-height: 1.6;
   color: var(--warna-teks);
   background-color: var(--warna-latar);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -54,9 +56,10 @@ a {
 
 /* 3. Wadah, header, dan menu */
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
 }
 
 header {
@@ -298,4 +301,92 @@ body.gelap {
   --warna-teks: #E3E8EE;
   --warna-kartu: #1C2836;
   --warna-garis: #34465A;
+}
+
+
+/* 12. Perbaikan tampilan responsif HP */
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container,
+header,
+main,
+footer,
+section,
+article {
+  min-width: 0;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Perbaikan layar HP */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .navbar {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+  }
+
+  .hero p {
+    overflow-wrap: break-word;
+  }
+
+  .daftar-kartu {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .daftar-kartu .kartu {
+    flex: 1 1 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  table {
+    max-width: 100%;
+  }
+
+  th,
+  td {
+    overflow-wrap: anywhere;
+  }
+
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
 }
